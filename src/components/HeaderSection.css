@@ -1,0 +1,55 @@
+.HeaderSection {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 2rem;
+}
+
+.header {
+    margin-bottom: 5%;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 1.25rem;
+    cursor: pointer;
+}
+
+main h1 {
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 15%;
+    margin-bottom: 0%;
+}
+
+.name {
+    font-size: 5rem;
+    background-image: linear-gradient(to right, #00ff9d, #00ffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 1.25rem;
+    text-align: left;
+    margin-left: 15%;
+    border: none;
+    margin-top: 1%;
+}
+
+button {
+    background-image: linear-gradient(to right, #00ffff, #00ff9d);
+    color: black;
+    border: none;
+    padding: 0.625rem 1.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
