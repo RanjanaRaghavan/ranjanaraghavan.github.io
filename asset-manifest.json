@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/ranjanaraghavan.github.io/static/css/main.78b53933.css",
+    "main.js": "/ranjanaraghavan.github.io/static/js/main.6ee14980.js",
+    "static/js/453.eb83383e.chunk.js": "/ranjanaraghavan.github.io/static/js/453.eb83383e.chunk.js",
+    "static/media/Me.png": "/ranjanaraghavan.github.io/static/media/Me.332f3136ea404153da7e.png",
+    "static/media/angular.png": "/ranjanaraghavan.github.io/static/media/angular.d6cb7bdb5713effc2de6.png",
+    "static/media/slick.svg": "/ranjanaraghavan.github.io/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/ranjanaraghavan.github.io/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/ranjanaraghavan.github.io/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/ranjanaraghavan.github.io/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/ranjanaraghavan.github.io/index.html",
+    "main.78b53933.css.map": "/ranjanaraghavan.github.io/static/css/main.78b53933.css.map",
+    "main.6ee14980.js.map": "/ranjanaraghavan.github.io/static/js/main.6ee14980.js.map",
+    "453.eb83383e.chunk.js.map": "/ranjanaraghavan.github.io/static/js/453.eb83383e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.78b53933.css",
+    "static/js/main.6ee14980.js"
+  ]
+}
