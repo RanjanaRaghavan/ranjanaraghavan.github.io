@@ -1,13 +1,17 @@
 // src/components/ProjectsSection.js
 import React from 'react';
-import './ProjectsSection.css'; // Add some styles later
+import './ProjectsSection.css';
+import jigSawgptScreenshot from '../assets/jigSawgpt.png';
 
 function ProjectsSection() {
   const projects = [
     {
-      name: "Project 1",
-      description: "Description of project 1.",
-      link: "http://github.com/project1"
+      title: "JigSawGPT",
+      description: "A chatbot that uses GPT-4 to answer questions about the Jigsaw puzzle game.",
+      technologies: ["REACT", "NEXT.JS", "OPENAI"],
+      websiteUrl: "#",
+      sourceCodeUrl: "#",
+      screenshotUrl: jigSawgptScreenshot
     },
     {
       name: "Project 2",
@@ -17,18 +21,39 @@ function ProjectsSection() {
   ];
 
   return (
-    <div className="projects-section">
-      <h2>My Projects</h2>
-      <div className="projects-grid">
-        {projects.map((project, index) => (
-          <div key={index} className="project-card">
-            <h3>{project.name}</h3>
-            <p>{project.description}</p>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
+    <section className="projects-section">
+      <h2 className="projects-title">My projects</h2>
+      {projects.map((project, index) => (
+        <div key={index} className="project-card">
+          <h3 className="project-title">{project.title}</h3>
+          <p className="project-description">{project.description}</p>
+          {project.technologies && project.technologies.length > 0 && (
+            <div className="project-technologies">
+              {project.technologies.map((tech, techIndex) => (
+                <span key={techIndex} className="technology-tag">{tech}</span>
+              ))}
+            </div>
+          )}
+          {project.screenshotUrl && (
+            <div className="project-screenshot">
+              <img src={project.screenshotUrl} alt={`${project.title} screenshot`} />
+            </div>
+          )}
+          <div className="project-links">
+            {project.websiteUrl && (
+              <a href={project.websiteUrl} className="project-link">
+                Website
+              </a>
+            )}
+            {project.sourceCodeUrl && (
+              <a href={project.sourceCodeUrl} className="project-link">
+                Source Code
+              </a>
+            )}
           </div>
-        ))}
-      </div>
-    </div>
+        </div>
+      ))}
+    </section>
   );
 }
 

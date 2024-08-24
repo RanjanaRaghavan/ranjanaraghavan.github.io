@@ -8,31 +8,18 @@
     margin-bottom: 5%;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-nav ul {
-    display: flex;
-    justify-content: flex-end;
-    list-style-type: none;
-}
-
-nav ul li {
-    margin-left: 1.25rem;
-    cursor: pointer;
+main {
+    text-align: left; /* Add this line to align all main content to the left */
 }
 
 main h1 {
-    font-size: 2rem;
-    text-align: left;
+    font-size: 2.5rem;
     margin-left: 15%;
     margin-bottom: 0%;
 }
 
 .name {
-    font-size: 5rem;
+    font-size: 7rem;
     background-image: linear-gradient(to right, #00ff9d, #00ffff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -52,4 +39,7 @@ button {
     padding: 0.625rem 1.25rem;
     font-size: 1rem;
     cursor: pointer;
+    margin-left: 15%; /* This aligns the button with h1 and .name */
+    display: inline-block; /* Add this to prevent full-width behavior */
+    margin-top: 3%;
 }

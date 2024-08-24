@@ -1,0 +1,95 @@
+.carousel-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #1a1a1a;
+  color: white;
+  padding: 2rem 0;
+}
+
+/* carousel-wrapper h1 {
+  font-size: 5rem;
+  color: white;
+  margin-bottom: 2rem;
+  text-align: left;
+} */
+
+.carousel-container {
+  width: 90%;
+  max-width: 1200px;
+  height: 60vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item {
+  position: absolute;
+  width: 30%;
+  height: 80%;
+  transition: all 0.5s ease;
+}
+
+.tech-card {
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 20%;
+  box-shadow: 0 0 1vw rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 2vw; */
+}
+
+.tech-logo {
+  width: 100%;
+  height: 100%;
+  /* margin-bottom: 2vh; */
+  border-radius: 20%;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 1vw 2vw;
+  font-size: 3vw;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-button.prev {
+  left: 2vw;
+}
+
+.carousel-button.next {
+  right: 2vw;
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    width: 60%;
+  }
+
+  .carousel-button {
+    font-size: 6vw;
+  }
+}
