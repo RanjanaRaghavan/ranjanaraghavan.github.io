@@ -7,4 +7,12 @@ nav ul {
 nav ul li {
     margin-left: 1.25rem;
     cursor: pointer;
+}   
+
+#nav-button {
+    background-color: black;
+    font-size: 1.03rem;
+    border: none;
+    color: white;
+    cursor: pointer;
 }

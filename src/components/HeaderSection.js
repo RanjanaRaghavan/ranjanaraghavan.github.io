@@ -21,7 +21,7 @@ function HeaderSection() {
                 <h1>Hey there! My name is</h1>
                 <h2 className="name">Ranjana<br />Raghavan.</h2>
                 <h1>I develop web applications from end-to-end!<br />I also am learning Violin</h1>
-                <button><GitHubIcon /> My Github</button>
+                <button id="github-button"><GitHubIcon /> My Github</button>
             </main>
         </div>
     );
