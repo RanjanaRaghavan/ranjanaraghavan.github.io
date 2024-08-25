@@ -2,6 +2,7 @@
 import React from 'react';
 import './ProjectsSection.css';
 import jigSawgptScreenshot from '../assets/jigSawgpt.png';
+import harrypotterScreenshot from '../assets/Riddle.png';
 
 function ProjectsSection() {
   const projects = [
@@ -10,13 +11,16 @@ function ProjectsSection() {
       description: "A chatbot that uses GPT-4 to answer questions about the Jigsaw puzzle game.",
       technologies: ["REACT", "NEXT.JS", "OPENAI"],
       websiteUrl: "#",
-      sourceCodeUrl: "#",
+      sourceCodeUrl: "https://github.com/RanjanaRaghavan/JigsawGPT",
       screenshotUrl: jigSawgptScreenshot
     },
     {
       name: "Project 2",
       description: "Description of project 2.",
-      link: "http://github.com/project2"
+      technologies: ["REACT", "DENO", "OPENAI"],
+      websiteUrl: "#",
+      sourceCodeUrl: "https://github.com/RanjanaRaghavan/RAG_Deno_Fullstack",
+      screenshotUrl: harrypotterScreenshot
     },
   ];
 
