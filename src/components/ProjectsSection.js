@@ -15,8 +15,8 @@ function ProjectsSection() {
       screenshotUrl: jigSawgptScreenshot
     },
     {
-      name: "Project 2",
-      description: "Description of project 2.",
+      title: "Chat with Riddle",
+      description: "RAG chatbot that answers questions about the Harry Potter series.",
       technologies: ["REACT", "DENO", "OPENAI"],
       websiteUrl: "#",
       sourceCodeUrl: "https://github.com/RanjanaRaghavan/RAG_Deno_Fullstack",
@@ -25,7 +25,7 @@ function ProjectsSection() {
   ];
 
   return (
-    <section className="projects-section">
+    <section className="projects-section" id="projects-section">
       <h2 className="projects-title">My projects</h2>
       {projects.map((project, index) => (
         <div key={index} className="project-card">
