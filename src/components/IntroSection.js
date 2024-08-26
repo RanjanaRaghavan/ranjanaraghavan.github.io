@@ -20,14 +20,14 @@ function IntroSection() {
                 variant="body1" 
                 paragraph 
                 className="intro-paragraph" 
-                sx={{ marginLeft: '15%' }}
+                sx={{ marginLeft: '10.5%' }}
               >
                 Hello! I'm Ranjana. I have 5 years of experience in the field of Web Development. I'm innovative and results-driven software engineer with over five years of experience in designing, developing, and deploying robust software solutions. Skilled in Java, JavaScript, and various web technologies, with a strong focus on delivering high-performance, scalable, and secure applications.Passionate about technology and always eager to learn and adapt to new challenges.Innovative and results-driven software engineer with over five years of experience in designing, developing, and deploying robust software solutions. Skilled in Java, JavaScript, and various web technologies, with a strong focus on delivering high-performance, scalable, and secure applications. Passionate about technology and always eager to learn and adapt to new challenges.
               </Typography>
               <Typography 
                 variant="body1" 
                 className="intro-paragraph"
-                sx={{ marginLeft: '15%' }}
+                sx={{ marginLeft: '10.5%' }}
               >
                 I am polishing my React skills right now with some projects, this website being one of them!
               </Typography>

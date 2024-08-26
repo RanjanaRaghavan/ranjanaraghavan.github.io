@@ -1,11 +1,25 @@
 .HeaderSection {
     background-color: #1a1a1a;
     color: white;
-    padding: 2rem;
+    padding: 1rem;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #1a1a1a;
+    color: white;
+    z-index: 1000;
 }
 
 .header {
-    margin-bottom: 5%;
+    margin-bottom: 1%;
+}
+
+.main-content {
+    padding-top: 60px;
 }
 
 main {
