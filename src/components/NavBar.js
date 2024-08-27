@@ -14,7 +14,7 @@ function NavBar() {
 
     const downloadResume = () => {
         const link = document.createElement('a');
-        link.href = '../assets/Ranjana_Raghavan_Resume.pdf';
+        link.href = process.env.PUBLIC_URL + '/Ranjana_Raghavan_Resume.pdf';
         link.download = 'Ranjana_Raghavan_Resume.pdf';
         document.body.appendChild(link);
         link.click();
