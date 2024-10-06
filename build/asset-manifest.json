@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/ranjanaraghavan.github.io/static/css/main.78b53933.css",
-    "main.js": "/ranjanaraghavan.github.io/static/js/main.6ee14980.js",
-    "static/js/453.eb83383e.chunk.js": "/ranjanaraghavan.github.io/static/js/453.eb83383e.chunk.js",
-    "static/media/Me.png": "/ranjanaraghavan.github.io/static/media/Me.332f3136ea404153da7e.png",
-    "static/media/angular.png": "/ranjanaraghavan.github.io/static/media/angular.d6cb7bdb5713effc2de6.png",
-    "static/media/slick.svg": "/ranjanaraghavan.github.io/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/ranjanaraghavan.github.io/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/ranjanaraghavan.github.io/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/ranjanaraghavan.github.io/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/ranjanaraghavan.github.io/index.html",
-    "main.78b53933.css.map": "/ranjanaraghavan.github.io/static/css/main.78b53933.css.map",
-    "main.6ee14980.js.map": "/ranjanaraghavan.github.io/static/js/main.6ee14980.js.map",
-    "453.eb83383e.chunk.js.map": "/ranjanaraghavan.github.io/static/js/453.eb83383e.chunk.js.map"
+    "main.css": "/static/css/main.4ca95a1a.css",
+    "main.js": "/static/js/main.57ca762b.js",
+    "static/js/453.eb83383e.chunk.js": "/static/js/453.eb83383e.chunk.js",
+    "static/media/jigSawgpt.png": "/static/media/jigSawgpt.1fe7fb63f50c8c28a672.png",
+    "static/media/Riddle.png": "/static/media/Riddle.eaecd104f02a39b34d25.png",
+    "static/media/Me.png": "/static/media/Me.332f3136ea404153da7e.png",
+    "static/media/angular.png": "/static/media/angular.d0c8ed3a16d1171b688a.png",
+    "static/media/ts.png": "/static/media/ts.2a6365fdf2dbc39a4bc7.png",
+    "static/media/java.png": "/static/media/java.c1dcd3474b0cefac766d.png",
+    "static/media/js.png": "/static/media/js.7fbd92ca24a33f46ec00.png",
+    "static/media/reactjs.png": "/static/media/reactjs.77991aba45e2a5287829.png",
+    "index.html": "/index.html",
+    "main.4ca95a1a.css.map": "/static/css/main.4ca95a1a.css.map",
+    "main.57ca762b.js.map": "/static/js/main.57ca762b.js.map",
+    "453.eb83383e.chunk.js.map": "/static/js/453.eb83383e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.78b53933.css",
-    "static/js/main.6ee14980.js"
+    "static/css/main.4ca95a1a.css",
+    "static/js/main.57ca762b.js"
   ]
 }
