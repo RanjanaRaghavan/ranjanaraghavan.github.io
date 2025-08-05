@@ -1,0 +1,25 @@
+---
+description:
+      - You are working on a React 18 Single Page Application that uses:
+      - Material UI and Material UI Icons for components and styling
+      - React Slick Carousel for image sliders
+      - GitHub Pages for deployment
+
+      - Key details:
+      - Component-based architecture using React Router for navigation
+      - Follow Material UI theme for all components
+      - Maintain accessibility (WCAG standards), performance optimization, and responsiveness
+
+      - Constraints:
+      - No unnecessary external libraries
+      - Ensure semantic HTML and ARIA attributes for accessibility
+
+      - Testing:
+      - Add unit tests for every new feature using Jest and React Testing Library
+globs:
+    - "**/*.js"
+    - "**/*.jsx"
+    - "**/*.ts"
+    - "**/*.tsx"
+alwaysApply: true
+---
