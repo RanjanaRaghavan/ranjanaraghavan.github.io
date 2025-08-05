@@ -9,11 +9,11 @@ import NavBar from './NavBar.js';
 function HeaderSection() {
     return (
         <div className="HeaderSection">
-            <Grid container className="header">
-                <Grid item xs={3}>
+            <Grid container className="header" spacing={2}>
+                <Grid item xs={12} sm={3}>
                     <Logo />
                 </Grid>
-                <Grid item xs={9}>
+                <Grid item xs={12} sm={9}>
                     <NavBar/>
                 </Grid>
             </Grid>

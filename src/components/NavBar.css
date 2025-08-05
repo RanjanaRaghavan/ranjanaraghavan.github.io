@@ -1,10 +1,122 @@
+nav {
+  position: relative;
+}
+
 nav ul {
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: clamp(0.5rem, 2vw, 1.25rem);
 }
 
 nav ul li {
-    margin-left: 1.25rem;
     cursor: pointer;
+    padding: clamp(0.5rem, 1.5vw, 0.75rem);
+    min-height: 44px;
+    min-width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease, transform 0.2s ease;
+    border-radius: 4px;
+}
+
+nav ul li:hover {
+    color: #00ff9d;
+    transform: translateY(-2px);
+}
+
+/* Mobile menu styles */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    color: white;
+    z-index: 1001;
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+.hamburger-menu.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        background-color: #1a1a1a;
+        transition: right 0.3s ease;
+        padding: 4rem 2rem 2rem;
+        z-index: 1000;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+    
+    nav ul.active {
+        right: 0;
+    }
+    
+    nav ul li {
+        margin: 0;
+        padding: 1rem;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        width: 100%;
+        justify-content: center;
+    }
+    
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        width: 100%;
+        right: -100%;
+    }
+    
+    .hamburger-menu {
+        top: 0.5rem;
+        right: 0.5rem;
+    }
+    
+    nav ul li {
+        padding: 0.75rem;
+        font-size: 1.1rem;
+    }
 }

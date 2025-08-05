@@ -15,8 +15,8 @@ function ProjectsSection() {
       screenshotUrl: jigSawgptScreenshot
     },
     {
-      name: "Project 2",
-      description: "Description of project 2.",
+      title: "Chat with Riddle",
+      description: "RAG chatbot that answers questions about the Harry Potter series.",
       technologies: ["REACT", "DENO", "OPENAI"],
       websiteUrl: "#",
       sourceCodeUrl: "https://github.com/RanjanaRaghavan/RAG_Deno_Fullstack",
