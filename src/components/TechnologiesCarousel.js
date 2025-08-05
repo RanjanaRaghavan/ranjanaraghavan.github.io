@@ -6,7 +6,7 @@ import './TechnologiesCarousel.css';
 
 function TechnologiesCarousel() {
   const technologies = [
-    "angular", "aws", "java", "nodejs", "reactjs", "ts", "css", "html", "js"
+    "reactjs",  "aws", "js","java", "ts", "css", "html","angular","nodejs"
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -57,7 +57,7 @@ function TechnologiesCarousel() {
   };
 
   return (
-    <div className="carousel-wrapper">
+    <div className="carousel-wrapper" id="technologies-carousel">
       <Typography variant="h2" component="h1" className="about-me-title" align="center">
           My Toolbox
       </Typography>

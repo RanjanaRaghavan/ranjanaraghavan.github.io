@@ -25,7 +25,7 @@ function ProjectsSection() {
   ];
 
   return (
-    <section className="projects-section">
+    <section className="projects-section" id="projects-section">
       <h2 className="projects-title">My projects</h2>
       {projects.map((project, index) => (
         <div key={index} className="project-card">

@@ -3,7 +3,12 @@ import './logo.css';
 
 function Logo() {
     return (
-        <div className="logo">RR</div>
+        <div className="logo-container">
+            <div className="logo">
+                <span className="letter" data-letter="R">R</span>
+                <span className="letter" data-letter="R">R</span>
+            </div>
+        </div>
     );
 }
 
