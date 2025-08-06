@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.db4f83aa.css",
-    "main.js": "/static/js/main.d1b33b67.js",
+    "main.css": "/static/css/main.ba0b0a0a.css",
+    "main.js": "/static/js/main.c8f8592d.js",
     "static/js/453.eb83383e.chunk.js": "/static/js/453.eb83383e.chunk.js",
-    "static/media/jigSawgpt.png": "/static/media/jigSawgpt.1fe7fb63f50c8c28a672.png",
-    "static/media/Riddle.png": "/static/media/Riddle.eaecd104f02a39b34d25.png",
     "static/media/Me.png": "/static/media/Me.332f3136ea404153da7e.png",
+    "static/media/bitelist.png": "/static/media/bitelist.78e8ae3d77b7f65f470b.png",
+    "static/media/raggit.png": "/static/media/raggit.65a7508750f3dafbb962.png",
+    "static/media/swift.png": "/static/media/swift.c460aaf560025e9dafd0.png",
+    "static/media/Ranjana_Raghavan_Resume.pdf": "/static/media/Ranjana_Raghavan_Resume.28dd97b300ae7e50febc.pdf",
     "static/media/angular.png": "/static/media/angular.d0c8ed3a16d1171b688a.png",
     "static/media/ts.png": "/static/media/ts.2a6365fdf2dbc39a4bc7.png",
     "static/media/java.png": "/static/media/java.c1dcd3474b0cefac766d.png",
     "static/media/js.png": "/static/media/js.7fbd92ca24a33f46ec00.png",
     "static/media/reactjs.png": "/static/media/reactjs.77991aba45e2a5287829.png",
+    "static/media/python.png": "/static/media/python.d09b5c95f29238501da0.png",
     "index.html": "/index.html",
-    "main.db4f83aa.css.map": "/static/css/main.db4f83aa.css.map",
-    "main.d1b33b67.js.map": "/static/js/main.d1b33b67.js.map",
+    "main.ba0b0a0a.css.map": "/static/css/main.ba0b0a0a.css.map",
+    "main.c8f8592d.js.map": "/static/js/main.c8f8592d.js.map",
     "453.eb83383e.chunk.js.map": "/static/js/453.eb83383e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.db4f83aa.css",
-    "static/js/main.d1b33b67.js"
+    "static/css/main.ba0b0a0a.css",
+    "static/js/main.c8f8592d.js"
   ]
 }
