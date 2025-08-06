@@ -1,0 +1,11 @@
+{
+  "id": "bitelist",
+  "title": "BiteList",
+  "description": "Extracts detailed recipes and auto-generates shopping lists from YouTube cooking videos using SwiftUI. Leverages YouTube Datav3 API to obtain metadata, captions and video descriptions.",
+  "technologies": ["SWIFTUI", "SWIFT", "OPENAI", "IOS APP DEVELOPMENT"],
+  "websiteUrl": "#",
+  "sourceCodeUrl": "https://github.com/RanjanaRaghavan/BiteList",
+  "screenshotUrl": "/assets/bitelist.png",
+  "featured": true,
+  "order": 2
+} 

@@ -6,7 +6,7 @@ import './TechnologiesCarousel.css';
 
 function TechnologiesCarousel() {
   const technologies = [
-    "reactjs",  "aws", "js","java", "ts", "css", "html","angular","nodejs"
+    "python","nodejs","reactjs","aws", "js","java", "ts", "css", "html","angular","swift","openai","llama-index",
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);

@@ -20,7 +20,7 @@ function HeaderSection() {
             <main>
                 <h1>Hey there! My name is</h1>
                 <h2 className="name">Ranjana<br />Raghavan.</h2>
-                <h1>I develop web applications from end-to-end!<br />I also am learning Violin</h1>
+                <h1>I develop applications from end-to-end!</h1>
                 <button><GitHubIcon /> My Github</button>
             </main>
         </div>

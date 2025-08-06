@@ -23,6 +23,9 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   color: #1a1a1a;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  min-height: clamp(300px, 50vh, 400px);
 }
 
 .project-card:hover {
@@ -41,6 +44,7 @@
   color: #333;
   font-size: clamp(0.9rem, 2.5vw, 1rem);
   line-height: 1.6;
+  flex-grow: 1;
 }
 
 .project-technologies {
@@ -63,19 +67,97 @@
   text-align: center;
 }
 
+.project-screenshot {
+  margin: clamp(0.5rem, 2vw, 1rem) 0;
+  text-align: center;
+  position: relative;
+}
+
 .project-screenshot img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
+  width: clamp(500px, 45vw, 500px);
+  height: clamp(500px, 30vw, 500px);
+  object-fit: cover;
+  border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 3px solid transparent;
+}
+
+.project-screenshot:hover img {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 255, 157, 0.3);
+}
+
+/* Scrollable image container */
+.project-screenshot-container {
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.project-screenshot-container:hover {
+  overflow: auto;
+  max-height: clamp(200px, 30vw, 300px);
+  max-width: clamp(200px, 30vw, 300px);
+}
+
+.project-screenshot-container:hover img {
+  object-fit: contain;
+  cursor: zoom-in;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Tooltip for scrollable images */
+.project-screenshot-container::after {
+  content: "Hover to scroll";
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.project-screenshot-container:hover::after {
+  opacity: 1;
+}
+
+/* Custom scrollbar for the image container */
+.project-screenshot-container::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.project-screenshot-container::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.project-screenshot-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 255, 157, 0.5);
+  border-radius: 4px;
+}
+
+.project-screenshot-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 255, 157, 0.7);
 }
 
 .project-links {
   display: flex;
   gap: clamp(0.5rem, 2vw, 1rem);
-  margin-top: clamp(0.5rem, 2vw, 1rem);
+  margin-top: auto;
   justify-content: center;
   flex-wrap: wrap;
+  padding-top: 1rem;
 }
 
 .project-link {
@@ -100,6 +182,69 @@
   transform: translateY(-2px);
 }
 
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #00ff9d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.loading-spinner {
+  width: clamp(30px, 5vw, 40px);
+  height: clamp(30px, 5vw, 40px);
+  border: clamp(3px, 0.5vw, 4px) solid rgba(0, 255, 157, 0.3);
+  border-top: clamp(3px, 0.5vw, 4px) solid #00ff9d;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error-message {
+  text-align: center;
+  padding: 2rem;
+  color: #ff6b6b;
+}
+
+.error-message button {
+  background: linear-gradient(to right, #ff6b6b, #ff8e8e);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.error-message button:hover {
+  transform: translateY(-2px);
+}
+
+.no-projects {
+  text-align: center;
+  padding: 2rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+}
+
+.screenshot-placeholder {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  padding: 2rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 1rem 0;
+}
+
 /* Responsive breakpoints */
 @media (max-width: 768px) {
   .projects-section {
@@ -115,10 +260,21 @@
     width: 95%;
     padding: 1rem;
     margin-bottom: 1rem;
+    min-height: clamp(280px, 45vh, 350px);
   }
   
   .project-title {
     font-size: 1.5rem;
+  }
+  
+  .project-screenshot img {
+    width: clamp(150px, 25vw, 200px);
+    height: clamp(150px, 25vw, 200px);
+  }
+  
+  .project-screenshot-container:hover {
+    max-height: clamp(150px, 25vw, 200px);
+    max-width: clamp(150px, 25vw, 200px);
   }
   
   .project-links {
@@ -144,6 +300,7 @@
   .project-card {
     width: 98%;
     padding: 0.75rem;
+    min-height: clamp(250px, 40vh, 300px);
   }
   
   .project-title {
@@ -152,6 +309,16 @@
   
   .project-description {
     font-size: 0.9rem;
+  }
+  
+  .project-screenshot img {
+    width: clamp(120px, 20vw, 150px);
+    height: clamp(120px, 20vw, 150px);
+  }
+  
+  .project-screenshot-container:hover {
+    max-height: clamp(120px, 20vw, 150px);
+    max-width: clamp(120px, 20vw, 150px);
   }
   
   .project-technologies {

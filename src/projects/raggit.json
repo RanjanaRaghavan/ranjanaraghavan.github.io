@@ -1,0 +1,11 @@
+{
+  "id": "raggit",
+  "title": "Raggit",
+  "description": "A GenAI app to index GitHub repositories, providing a structured directory view, developed an interactive chat interface for new contributors using OpenAI (gpt-4o) and llama-index.",
+  "technologies": ["PYTHON", "OPENAI", "LLAMA-INDEX"],
+  "websiteUrl": "#",
+  "sourceCodeUrl": "https://github.com/RanjanaRaghavan/RAGGit",
+  "screenshotUrl": "/assets/raggit.png",
+  "featured": true,
+  "order": 1
+}
