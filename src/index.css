@@ -21,6 +21,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  overflow-y: visible;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 code {
@@ -29,21 +32,69 @@ code {
 }
 
 /* Global responsive utilities */
-.container {
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure all sections can expand properly */
+section, div {
+  overflow: visible;
+  box-sizing: border-box;
+}
+
+/* Better text handling */
+p, h1, h2, h3, h4, h5, h6 {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Responsive container utilities */
+.container-fluid {
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 var(--spacing-md);
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
+/* Enhanced responsive breakpoints for global use */
+@media (max-width: 1200px) {
+  .container-fluid {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container-fluid {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 }
 
 @media (max-width: 768px) {
-  .container {
-    padding: 0 var(--spacing-sm);
+  .container-fluid {
+    padding-right: 8px;
+    padding-left: 8px;
   }
 }
 
 @media (max-width: 480px) {
-  .container {
-    padding: 0 var(--spacing-xs);
+  .container-fluid {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+@media (max-width: 360px) {
+  .container-fluid {
+    padding-right: 3px;
+    padding-left: 3px;
   }
 }

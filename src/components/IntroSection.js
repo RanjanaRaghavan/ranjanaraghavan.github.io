@@ -19,17 +19,13 @@ function IntroSection() {
               <Typography 
                 variant="body1" 
                 paragraph 
-                className="intro-paragraph" 
-                sx={{ marginLeft: '10.5%' }}
-              >
-                Hello! I'm Ranjana. I have 5 years of experience in the field of Web Development. I'm innovative and results-driven software engineer with over five years of experience in designing, developing, and deploying robust software solutions. Skilled in Java, JavaScript, and various web technologies, with a strong focus on delivering high-performance, scalable, and secure applications.Passionate about technology and always eager to learn and adapt to new challenges.Innovative and results-driven software engineer with over five years of experience in designing, developing, and deploying robust software solutions. Skilled in Java, JavaScript, and various web technologies, with a strong focus on delivering high-performance, scalable, and secure applications. Passionate about technology and always eager to learn and adapt to new challenges.
-              </Typography>
-              <Typography 
-                variant="body1" 
                 className="intro-paragraph"
-                sx={{ marginLeft: '10.5%' }}
               >
-                I am polishing my React skills right now with some projects, this website being one of them!
+                Hello, I’m Ranjana. I’m a software engineer with 5 years of experience in web development, specializing in Python, JavaScript, and modern web technologies. I focus on building scalable, secure, and high-performance applications.
+
+Recently, I’ve been expanding into AI—exploring machine learning concepts and building projects that apply AI to real-world problems. I’m also polishing my React skills, with this website being one of my practice projects.
+
+I’m passionate about technology, adaptable to new challenges, and motivated by creating solutions that have impact.
               </Typography>
             </Box>
           </Grid>

@@ -2,6 +2,7 @@
     background-color: #1a1a1a;
     color: white;
     padding: clamp(1rem, 3vw, 2rem);
+    overflow: visible;
 }
 
 .header {
@@ -17,12 +18,15 @@
 
 main {
     text-align: left;
+    overflow: visible;
 }
 
 main h1 {
     font-size: clamp(1.5rem, 4vw, 2.5rem);
     margin-left: clamp(1rem, 5vw, 15%);
     margin-bottom: 0%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .name {
@@ -40,47 +44,138 @@ main h1 {
     line-height: 1.1;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    hyphens: auto;
 }
 
-button {
+
+/* GitHub Button Specific Styling */
+.github_button {
     background-image: linear-gradient(to right, #00ffff, #00ff9d);
     color: black;
     border: none;
-    padding: clamp(0.5rem, 2vw, 0.625rem) clamp(1rem, 3vw, 1.25rem);
-    font-size: clamp(0.9rem, 2.5vw, 1rem);
+    padding: clamp(0.75rem, 2.5vw, 1rem) clamp(1.5rem, 4vw, 2rem);
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
+    font-weight: 600;
     cursor: pointer;
     margin-left: clamp(1rem, 5vw, 15%);
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
     margin-top: 3%;
-    min-height: 44px;
-    min-width: 44px;
-    border-radius: 4px;
-    transition: transform 0.2s ease;
+    min-height: 48px;
+    min-width: 48px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 255, 255, 0.3);
+    text-decoration: none;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
 }
 
-button:hover {
-    transform: translateY(-2px);
+.github_button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 255, 255, 0.4);
+    background-image: linear-gradient(to right, #00e6e6, #00e699);
 }
 
-/* Responsive breakpoints */
+.github_button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.5);
+}
+
+/* Enhanced responsive breakpoints */
+@media (max-width: 1200px) {
+    main h1 {
+        font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+    }
+    
+    .name {
+        font-size: clamp(2.2rem, 7vw, 6rem);
+    }
+}
+
+@media (max-width: 1024px) {
+    main h1 {
+        font-size: clamp(1.3rem, 3.2vw, 2rem);
+    }
+    
+    .name {
+        font-size: clamp(2rem, 6.5vw, 5.5rem);
+    }
+}
+
+@media (max-width: 900px) {
+    main h1 {
+        font-size: clamp(1.2rem, 3vw, 1.8rem);
+        margin-left: clamp(0.75rem, 4vw, 12%);
+    }
+    
+    .name {
+        font-size: clamp(1.8rem, 6vw, 5rem);
+        margin-left: clamp(0.75rem, 4vw, 12%);
+    }
+    
+    button {
+        margin-left: clamp(0.75rem, 4vw, 12%);
+    }
+}
+
 @media (max-width: 768px) {
     main h1 {
         font-size: 1.8rem;
-        margin-left: 1rem;
+        margin-left: 0;
         text-align: center;
+        padding: 0 1rem;
     }
     
     .name {
         font-size: 3rem;
-        margin-left: 1rem;
+        margin-left: 0;
+        text-align: center;
+        padding: 0 1rem;
+    }
+    
+    .github_button {
+        margin: 1.5rem auto 0;
+        width: calc(100% - 2rem);
+        max-width: 280px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1.1rem;
+        padding: 1rem 2rem;
+        min-height: 52px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    main h1 {
+        font-size: 1.6rem;
+        margin-left: 0;
+        padding: 0 0.75rem;
         text-align: center;
     }
     
-    button {
-        margin-left: 1rem;
-        width: calc(100% - 2rem);
-        margin-top: 1rem;
+    .name {
+        font-size: 2.8rem;
+        margin-left: 0;
+        padding: 0 0.75rem;
         text-align: center;
+    }
+    
+    .github_button {
+        margin: 1.5rem auto 0;
+        width: calc(100% - 1.5rem);
+        max-width: 260px;
+        font-size: 1rem;
+        padding: 0.9rem 1.5rem;
+        min-height: 50px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -91,14 +186,65 @@ button:hover {
     
     .name {
         font-size: 2.5rem;
+        margin-left: 0;
+        padding: 0 0.5rem;
+        text-align: center;
     }
     
     main h1 {
         font-size: 1.5rem;
+        margin-left: 0;
+        padding: 0 0.5rem;
+        text-align: center;
     }
     
-    button {
+    .github_button {
         font-size: 1rem;
-        padding: 0.75rem 1.5rem;
+        padding: 0.9rem 1.5rem;
+        margin: 1.5rem auto 0;
+        width: calc(100% - 1rem);
+        max-width: 240px;
+        min-height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.4rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 360px) {
+    .HeaderSection {
+        padding: 0.75rem;
+    }
+    
+    .name {
+        font-size: 2.2rem;
+        margin-left: 0;
+        padding: 0 0.25rem;
+        text-align: center;
+    }
+    
+    main h1 {
+        font-size: 1.3rem;
+        margin-left: 0;
+        padding: 0 0.25rem;
+        text-align: center;
+    }
+    
+    .github_button {
+        font-size: 0.95rem;
+        padding: 0.8rem 1.2rem;
+        margin: 1.5rem auto 0;
+        width: calc(100% - 0.5rem);
+        max-width: 220px;
+        min-height: 46px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.3rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

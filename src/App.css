@@ -2,6 +2,9 @@
   text-align: center;
   min-height: 100vh;
   overflow-x: hidden;
+  overflow-y: visible;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .App-logo {
@@ -48,12 +51,49 @@
 /* Responsive utilities */
 .section {
   padding: var(--spacing-lg) 0;
+  overflow: visible;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .section-content {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 var(--spacing-md);
+  overflow: visible;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Enhanced responsive breakpoints */
+@media (max-width: 1200px) {
+  .section {
+    padding: var(--spacing-md) 0;
+  }
+  
+  .section-content {
+    padding: 0 var(--spacing-md);
+  }
+}
+
+@media (max-width: 1024px) {
+  .section {
+    padding: var(--spacing-md) 0;
+  }
+  
+  .section-content {
+    padding: 0 var(--spacing-md);
+  }
+}
+
+@media (max-width: 900px) {
+  .section {
+    padding: var(--spacing-md) 0;
+  }
+  
+  .section-content {
+    padding: 0 var(--spacing-sm);
+  }
 }
 
 @media (max-width: 768px) {
@@ -66,9 +106,29 @@
   }
 }
 
+@media (max-width: 600px) {
+  .section {
+    padding: var(--spacing-sm) 0;
+  }
+  
+  .section-content {
+    padding: 0 var(--spacing-sm);
+  }
+}
+
 @media (max-width: 480px) {
   .section {
     padding: var(--spacing-sm) 0;
+  }
+  
+  .section-content {
+    padding: 0 var(--spacing-xs);
+  }
+}
+
+@media (max-width: 360px) {
+  .section {
+    padding: var(--spacing-xs) 0;
   }
   
   .section-content {
